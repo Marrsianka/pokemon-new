@@ -14,3 +14,5 @@ function showPokemons() {
         pokemonList.appendChild('pokemonsColumn');
     }
 }
+
+showPokemons();
