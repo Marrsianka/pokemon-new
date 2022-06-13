@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pokemon - My Collection</title>
+    <script async src="script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <div class="content">
+            <div class="container">
+                <div class="content__row">
+                    <div class="content__item filters">
+                        <div class="filters__row">
+                            <div class="filters__column locations">
+                                <div class="filters__item">
+                                    <div class="locations__row">
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-start.png" alt="Стартовые"
+                                                title="Стартовые">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-safari.png" alt="Сафари" title="Сафари">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-zoo.png" alt="Зоопарк" title="Зоопарк">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-quest.png" alt="Квестовые"
+                                                title="Квестовые">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-legend.png" alt="Легенды" title="Легенды">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-K-beach.png" alt="К-Побережье"
+                                                title="К-Побережье">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-K-caves.png" alt="К-Пещеры"
+                                                title="К-Пещеры">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-K-forest.png" alt="К-Лес" title="К-Лес">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-K-glade.png" alt="K-Поляна"
+                                                title="К-Поляна">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-K-ocean.png" alt="К-Океан" title="К-Океан">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-K-town.png" alt="К-Города"
+                                                title="К-Города">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-OI-cave.png" alt="ОО-Пещера"
+                                                title="ОО-Пещера">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-OI-city.png" alt="ОО-Город"
+                                                title="ОО-Город">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-OI-corals.png" alt="ОО-Коралловый Риф"
+                                                title="ОО-Коралловый Риф">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-OI-desert.png" alt="ОО-Пустыня"
+                                                title="ОО-Пустыня">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-OI-digging.png" alt="ОО-Раскопки"
+                                                title="ОО-Раскопки">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-OI-grot.png" alt="ОО-Подводный Грот"
+                                                title="ОО-Подводный Грот">
+                                        </div>
+                                        <div class="locations__item active">
+                                            <img src="img/locations/location-OI-iceberg.png" alt="ОО-Ледник"
+                                                title="ОО-Ледник">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-OI-island.png" alt="ОО-Остров"
+                                                title="ОО-Остров">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-OI-jungle.png" alt="ОО-Джунгли"
+                                                title="ОО-Джунгли">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-OI-lava.png" alt="ОО-Лавовое Плато"
+                                                title="ОО-Лавовое Плато">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-OI-lavandia.png" alt="ОО-Лавандия"
+                                                title="ОО-Лавандия">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-OI-mountains.png" alt="ОО-Горы"
+                                                title="ОО-Горы">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-OI-ocean.png" alt="ОО-Океан"
+                                                title="ОО-Океан">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-OI-path.png" alt="ОО-Горная Тропа"
+                                                title="ОО-Горная Тропа">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-OI-plateau.png" alt="ОО-Горное Плато"
+                                                title="ОО-Горное Плато">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-OI-road.png" alt="ОО-Дорога"
+                                                title="ОО-Дорога">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-OI-ship.png" alt="ОО-Затонувший Корабль"
+                                                title="ОО-Затонувший Корабль">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-OI-steppe.png" alt="ОО-Степь"
+                                                title="ОО-Степь">
+                                        </div>
+                                        <div class="locations__item">
+                                            <img src="img/locations/location-OI-swamp.png" alt="ОО-Болото"
+                                                title="ОО-Болото">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filters__column types">
+                                <div class="filters__item">
+                                    <div class="types__row">
+                                        <div class="types__item">
+                                            <img src="img/types/type-bug.png" alt="Насекомое" title="Насекомое">
+                                        </div>
+                                        <div class="types__item">
+                                            <img src="img/types/type-dark.png" alt="Тьма" title="Тьма">
+                                        </div>
+                                        <div class="types__item">
+                                            <img src="img/types/type-dragon.png" alt="Дракон" title="Дракон">
+                                        </div>
+                                        <div class="types__item">
+                                            <img src="img/types/type-electric.png" alt="Электричество"
+                                                title="Электричество">
+                                        </div>
+                                        <div class="types__item">
+                                            <img src="img/types/type-fairy.png" alt="Волшебный" title="Волшебный">
+                                        </div>
+                                        <div class="types__item">
+                                            <img src="img/types/type-fighting.png" alt="Боевой" title="Боевой">
+                                        </div>
+                                        <div class="types__item">
+                                            <img src="img/types/type-fire.png" alt="Огонь" title="Огонь">
+                                        </div>
+                                        <div class="types__item">
+                                            <img src="img/types/type-flying.png" alt="Летяющий" title="Летяющий">
+                                        </div>
+                                        <div class="types__item">
+                                            <img src="img/types/type-ghost.png" alt="Призрак" title="Призрак">
+                                        </div>
+                                        <div class="types__item">
+                                            <img src="img/types/type-grass.png" alt="Трава" title="Трава">
+                                        </div>
+                                        <div class="types__item">
+                                            <img src="img/types/type-ground.png" alt="Земля" title="Земля">
+                                        </div>
+                                        <div class="types__item">
+                                            <img src="img/types/type-ice.png" alt="Лёд" title="Лёд">
+                                        </div>
+                                        <div class="types__item">
+                                            <img src="img/types/type-normal.png" alt="Нормальный" title="Нормальный">
+                                        </div>
+                                        <div class="types__item">
+                                            <img src="img/types/type-poison.png" alt="Яд" title="Яд">
+                                        </div>
+                                        <div class="types__item">
+                                            <img src="img/types/type-psychic.png" alt="Психический" title="Психический">
+                                        </div>
+                                        <div class="types__item">
+                                            <img src="img/types/type-rock.png" alt="Камень" title="Камень">
+                                        </div>
+                                        <div class="types__item">
+                                            <img src="img/types/type-steel.png" alt="Сталь" title="Сталь">
+                                        </div>
+                                        <div class="types__item">
+                                            <img src="img/types/type-water.png" alt="Вода" title="Вода">
+                                        </div>
+                                        <div class="types__item">
+                                            <img src="img/types/type-mega.png" alt="Мега" title="Мега">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filters__column counter">
+                                <div class="filters__item">
+                                    <div class="counter__row">
+                                        <div class="counter__item">
+                                            52<span>/325</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__item pokemons">
+                        <div class="pokemons__row">
+                            <div class="pokemons__column">
+                                <div class="pokemons__item card">
+                                    <div class="card__row">
+                                        <div class="card__item title">
+                                            <div class="title__row">
+                                                <div class="title__item name">
+                                                    Чармандер
+                                                </div>
+                                                <div class="title__item rank">
+                                                    10
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__item image">
+                                            <img src="img/pokemons/charmander.png" alt="Чармандер" title="Чармандер">
+                                        </div>
+                                        <div class="card__item features">
+                                            <div class="features__row">
+                                                <div class="features__item type">
+                                                    <div class="type__row">
+                                                        <div class="type__item">
+                                                            <img src="img/types/type-fire.png" alt="Огонь"
+                                                                title="Огонь">
+                                                        </div>
+                                                        <div class="type__item">
+                                                            <img src="img/types/type-flying.png" alt="Летающий"
+                                                                title="Летающий">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="features__item location">
+                                                    <img src="img/locations/location-start.png" alt="Стартовый"
+                                                        title="Стартовый">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pokemons__column">
+                                <div class="pokemons__item card inactive">
+                                    <div class="card__row">
+                                        <div class="card__item title">
+                                            <div class="title__row">
+                                                <div class="title__item name">
+                                                    Буффалант в костюме Тангелы
+                                                </div>
+                                                <div class="title__item rank">
+                                                    5
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__item image">
+                                            <img src="img/pokemons/bouffalant-tangela.png" alt="Буффалант в костюме Тангелы" title="Буффалант в костюме Тангелы">
+                                        </div>
+                                        <div class="card__item features">
+                                            <div class="features__row">
+                                                <div class="features__item type">
+                                                    <div class="type__row">
+                                                        <div class="type__item">
+                                                            <img src="img/types/type-psychic.png" alt="Психический"
+                                                                title="Психический">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="features__item location">
+                                                    <img src="img/locations/location-quest.png" alt="Квестовый"
+                                                        title="Квестовый">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__text">Gotta catch 'em all!</div>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

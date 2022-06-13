@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+/*Cleansing styles - START*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+
+nav, footer, header, aside {display: block;}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {font-family: inherit;}
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+
+h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
+
+/*Cleansing styles - END*/
+
+body {    
+    font-family: 'Comfortaa', cursive;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    height: 45vh;
+    background-color: #bf6b22;
+    background: url("img/header-background.jpg") 100% no-repeat;
+    background-size: cover;
+}
+
+.content {
+    flex: 1 1 auto;
+    background-color: #f4ecd5;
+}
+
+.content__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters__row {
+    display: flex;
+    margin: 0 -10px;
+}
+
+.filters__column {
+    padding: 0 10px;
+}
+
+.filters__item {
+    height: 100%;
+}
+
+.locations .filters__item {        
+    border-right: 1px solid #669aaa;
+}
+
+.locations {
+    flex: 0 1 50%;
+}
+
+.locations__row, .types__row {
+    display: flex;
+    margin: -5px -5px;
+    flex-wrap: wrap;
+}
+
+.locations__item, .types__item {
+    flex: 0 0 50px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.locations__item img, .types__item img {
+    max-width: 100%;
+}
+
+.types {
+    flex: 0 1 30%;
+}
+
+.active {
+    filter: drop-shadow(0 0 10px #669aaa);
+}
+
+.counter {
+    flex: 0 1 20%;
+}
+
+.counter__row {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.counter__item {    
+    font-size: 50px;
+    color: #669aaa;
+}
+
+.counter__item span { 
+    font-size: 40px;
+    color: #669aaa85;
+}
+
+.pokemons {
+    margin: 20px 0 0 0;
+}
+
+.pokemons__row {
+    display: flex;
+    margin: -5px;
+    flex-wrap: wrap;
+}
+
+.pokemons__column {
+    padding: 5px;
+}
+
+.pokemons__item {
+    border: 1px solid #669aaa;
+    border-radius: 5%;
+    width: 165px;
+    min-height: 255px;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+
+.inactive {
+    filter: grayscale(100%) brightness(0.90) opacity(0.7);
+}
+
+.pokemons__item:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow:0px 0px 10px #669aaa85;
+    transition: all 0.5s;
+}
+
+.card__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.title__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.title__item {
+    margin: 5px;
+}
+
+.name {
+    font-size: 14px;
+    line-height: 16px;
+    color: #669aaa;
+    height: 32px;
+}
+
+.rank {    
+    flex: 0 0 30px;
+    display: block;
+    color: #ffffff;
+    font-weight: 900;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #669aaa;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.image {
+    width: 163px;
+    height: 163px;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+.features__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features__item {
+    margin: 1px 5px 5px 5px;
+}
+
+.type__row {
+    display: flex;
+    margin: 0 -2.5px;
+}
+
+.type__item {
+    width: 35px;
+    padding: 2.5px;
+}
+
+.type__item img {
+    max-width: 100%;
+}
+
+.location {
+    width: 30px;
+    filter: opacity(30%);
+}
+
+.location img {
+    max-width: 100%;
+}
+
+.footer {
+    background-color: #565251;
+}
+
+.footer__row {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text {
+    color: #ffffff;
+    font-size: 16px;
+}

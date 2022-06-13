@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Бульбазавр",
+        "image": "img/pokemons/bulbasaur.png",
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "location": "start",
+        "evolutions": [
+            {
+                "name": "Ивизавр",
+                "image": "img/pokemons/ivysaur.png"
+            },
+            {
+                "name": "Венузавр",
+                "image": "img/pokemons/venusaur.png"
+            },
+            {
+                "name": "Мега-Венузавр",
+                "image": "img/pokemons/mega_venusaur.png",
+                "mega": true
+            }
+        ]
+    },
+    {
+        "name": "Эканс",
+        "image": "img/pokemons/ekans.png",
+        "types": "poison",
+        "location": "K-forest",
+        "evolutions": [
+            {
+                "name": "Эрбок",
+                "image": "img/pokemons/arbok.png"
+            },
+            {
+                "name": "Мега-Эрбок",
+                "image": "img/pokemons/mega_arbok.png",
+                "types": [
+                    "poison",
+                    "dark"
+                ],
+                "mega": true
+            }
+        ]
+    },
+    {
+        "name": "Хитмонли",
+        "image": "img/pokemons/hitmonlee.png",
+        "types": "fighting",
+        "location": "K-town"
+    }
+]
