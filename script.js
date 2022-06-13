@@ -18,6 +18,11 @@
                     let cardItemImage = document.createElement('div');
                         let imgPokemon = document.createElement('img');
                     let cardItemFeatures = document.createElement('div');
+                        let featuresRow = document.createElement('div');
+                            let featuresItemType = document.createElement('div');
+                                let typeRow = document.createElement('div');
+                            let featuresItemLocation = document.createElement('div');
+                                let imgLocation = document.createElement('img');
 
 
 
@@ -26,6 +31,7 @@
         imgPokemon.src = database[i].image;
         imgPokemon.alt = database[i].name;
         imgPokemon.title = database[i].name;
+        imgLocation.src = 'img/locations/location-' + database[i].location;
 
 
 
@@ -36,14 +42,20 @@
                     cardItemTitle.classList.add('card__item');
                     cardItemTitle.classList.add('title');
                         titleRow.classList.add('title__row');
-                        titleItemName.classList.add('title__item');
-                        titleItemName.classList.add('name');
-                        titleItemRank.classList.add('title__item');
-                        titleItemRank.classList.add('rank');
+                            titleItemName.classList.add('title__item');
+                            titleItemName.classList.add('name');
+                            titleItemRank.classList.add('title__item');
+                            titleItemRank.classList.add('rank');
                     cardItemImage.classList.add('card__item');
                     cardItemImage.classList.add('image');
                     cardItemFeatures.classList.add('card__item');
                     cardItemFeatures.classList.add('features');
+                        featuresRow.classList.add('features__row');
+                            featuresItemType.classList.add('features__item');
+                            featuresItemType.classList.add('type');
+                                typeRow.classList.add('type__row');
+                            featuresItemLocation.classList.add('features__item');
+                            featuresItemLocation.classList.add('location');
 
 
 
@@ -54,11 +66,16 @@
                 pokemonsItemCard.appendChild(cardRow);
                     cardRow.appendChild(cardItemTitle);
                         cardItemTitle.appendChild(titleRow);
-                        titleRow.appendChild(titleItemName);
-                        titleRow.appendChild(titleItemRank);
+                            titleRow.appendChild(titleItemName);
+                            titleRow.appendChild(titleItemRank);
                     cardRow.appendChild(cardItemImage);
                         cardItemImage.appendChild(imgPokemon);
                     cardRow.appendChild(cardItemFeatures);
+                        cardItemFeatures.appendChild(featuresRow);
+                            featuresRow.appendChild(featuresItemType);
+                                featuresItemType.appendChild(typeRow);
+                            featuresRow.appendChild(featuresItemLocation);
+                                featuresItemLocation.appendChild(imgLocation);
     }
 })();
 
