@@ -9,7 +9,7 @@
     for(let i=0; i<database.length; i++) {
         let pokemonsColumn = document.createElement('div');
         pokemonsColumn.classList.add('pokemons__column');
-        pokemonList.appendChild('pokemonsColumn');
+        pokemonList.appendChild(pokemonsColumn);
     }
 })();
 
