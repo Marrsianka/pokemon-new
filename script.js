@@ -34,11 +34,11 @@
 
 
         pokemonList.appendChild(pokemonsColumn);
-            pokemonsItemCard.appendChild(pokemonsColumn);
-                cardRow.appendChild(pokemonsItemCard);
-                    cardItemTitle.appendChild(cardRow);
-                    cardItemImage.appendChild(cardRow);
-                    cardItemFeatures.appendChild(cardRow);
+            pokemonsColumn.appendChild(pokemonsItemCard);
+                pokemonsItemCard.appendChild(cardRow);
+                    cardRow.appendChild(cardItemTitle);
+                    cardRow.appendChild(cardItemImage);
+                    cardRow.appendChild(cardItemFeatures);
     }
 })();
 
