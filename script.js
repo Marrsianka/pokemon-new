@@ -26,7 +26,7 @@
                                         typeItem.classList.add('type__item')
                                         typeRow.appendChild(typeItem);
                                             let imgType = document.createElement('img');
-                                            imgType.src = 'img/locations/location-' + database[i].types[j] + '.png';
+                                            imgType.src = 'img/types/type-' + database[i].types[j] + '.png';
                                             imgType.alt = database[i].types[j];
                                             imgType.title = database[i].types[j];
                                             typeItem.appendChild(imgType);
