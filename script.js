@@ -1,5 +1,16 @@
+//Pokemon-database connection
 (async () => {
-    let DB = await(await fetch('pokemon-database.json')).json();
+    let database = await(await fetch('pokemon-database.json')).json();
  
-    console.log(DB);
+    console.log(database);
 })();
+
+function showPokemons() {
+    let pokemonList = document.querySelector('.pokemons__row');
+
+    for(let i=0; i<database.length; i++) {
+        let pokemonsColumn = document.createElement('div');
+        pokemonsColumn.classList.add('pokemons__column');
+        pokemonList.appendChild('pokemonsColumn');
+    }
+}
