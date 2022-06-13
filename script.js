@@ -21,6 +21,16 @@
                         let featuresRow = document.createElement('div');
                             let featuresItemType = document.createElement('div');
                                 let typeRow = document.createElement('div');
+                                    for(let j=0; j<database[i].types.length; j++) {
+                                        let typeItem = document.createElement('div');
+                                        typeItem.classList.add('type__item')
+                                        typeRow.appendChild(typeItem);
+                                            let imgType = document.createElement('img');
+                                            imgType.src = 'img/locations/location-' + database[i].types[j] + '.png';
+                                            imgType.alt = database[i].types[j];
+                                            imgType.title = database[i].types[j];
+                                            typeItem.appendChild(imgType);
+                                    }
                             let featuresItemLocation = document.createElement('div');
                                 let imgLocation = document.createElement('img');
 
@@ -32,6 +42,8 @@
         imgPokemon.alt = database[i].name;
         imgPokemon.title = database[i].name;
         imgLocation.src = 'img/locations/location-' + database[i].location + '.png';
+        imgLocation.alt = database[i].location;
+        imgLocation.title = database[i].location;
 
 
 
