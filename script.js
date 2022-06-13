@@ -31,7 +31,7 @@
         imgPokemon.src = database[i].image;
         imgPokemon.alt = database[i].name;
         imgPokemon.title = database[i].name;
-        imgLocation.src = 'img/locations/location-' + database[i].location;
+        imgLocation.src = 'img/locations/location-' + database[i].location + '.png';
 
 
 
